@@ -1,0 +1,39 @@
+[
+    {
+       "number": "3458    8923    1289    7261",
+       "date": "06/26",
+       "cvv": "456",
+       "logo": "mastercard",
+       "type": "MASTER CARD",
+       "name": "Jon Snow",
+       "image": "credit"
+    },
+    {
+       "number": "2048    1222    0093    2300",
+       "date": "01/27",
+       "cvv": "456",
+       "logo": "paypal",
+       "type": "PAYPAL",
+       "name": "The Joker",
+       "image": "gradient"
+    },
+    {
+       "number": "2395    4501    1289    3451",
+       "date": "02/28",
+       "cvv": "456",
+       "logo": "amer",
+       "type": "AMERICAN EXPRESS",
+       "name": "Jack Sparrow",
+       "image": "gradient2"
+    },
+    {
+       "number": "0192    7399    1289    3472",
+       "date": "06/25",
+       "cvv": "456",
+       "logo": "visa",
+       "type": "VISA",
+       "name": "Lord Voldemort",
+       "image": "gradient3"
+    }
+    
+]
