@@ -18,6 +18,8 @@
 		D6BB643D2B8A566F0008752F /* CardsCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB643C2B8A566F0008752F /* CardsCollectionFlowLayout.swift */; };
 		D6BB643F2B8A63580008752F /* Card.json in Resources */ = {isa = PBXBuildFile; fileRef = D6BB643E2B8A63580008752F /* Card.json */; };
 		D6BB64412B8A65630008752F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB64402B8A65630008752F /* CardModel.swift */; };
+		D6BB64432B8A69C50008752F /* JSONDecoder+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB64422B8A69C50008752F /* JSONDecoder+Ext.swift */; };
+		D6BB64452B8A69E20008752F /* CollectionViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB64442B8A69E20008752F /* CollectionViewCell+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		D6BB643C2B8A566F0008752F /* CardsCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		D6BB643E2B8A63580008752F /* Card.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Card.json; sourceTree = "<group>"; };
 		D6BB64402B8A65630008752F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		D6BB64422B8A69C50008752F /* JSONDecoder+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Ext.swift"; sourceTree = "<group>"; };
+		D6BB64442B8A69E20008752F /* CollectionViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionViewCell+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				D6BB64402B8A65630008752F /* CardModel.swift */,
 				D6BB643C2B8A566F0008752F /* CardsCollectionFlowLayout.swift */,
 				D6BB643E2B8A63580008752F /* Card.json */,
+				D6BB64422B8A69C50008752F /* JSONDecoder+Ext.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				D6BB64382B8A4AFE0008752F /* CardCollectionViewCell.swift */,
 				D6BB64392B8A4AFE0008752F /* CardCollectionViewCell.xib */,
+				D6BB64442B8A69E20008752F /* CollectionViewCell+Ext.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 			files = (
 				D6BB643A2B8A4AFE0008752F /* CardCollectionViewCell.swift in Sources */,
 				D6BB641F2B8A49EB0008752F /* AppDelegate.swift in Sources */,
+				D6BB64452B8A69E20008752F /* CollectionViewCell+Ext.swift in Sources */,
+				D6BB64432B8A69C50008752F /* JSONDecoder+Ext.swift in Sources */,
 				D6BB643D2B8A566F0008752F /* CardsCollectionFlowLayout.swift in Sources */,
 				D6BB64212B8A49EB0008752F /* SceneDelegate.swift in Sources */,
 				D6BB64352B8A4A5E0008752F /* CardViewController.swift in Sources */,

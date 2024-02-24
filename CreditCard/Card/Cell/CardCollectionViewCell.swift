@@ -9,8 +9,10 @@ import UIKit
 
 class CardCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Constants
     static let identifier = String(describing: CardCollectionViewCell.self)
-
+    
+    // MARK: - Outlets
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var ownerName: UILabel!
     @IBOutlet weak var ownerLabel: UILabel!
@@ -23,11 +25,14 @@ class CardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var validLabel: UILabel!
     @IBOutlet weak var cardNumber: UILabel!
     @IBOutlet weak var cardImage: UIImageView!
+    
+    // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         configureUI()
     }
     
+    // MARK: - Configuration
     func setup(card: Card) {
         cardNumber.text = card.number
         validDate.text = card.date
@@ -43,43 +48,22 @@ class CardCollectionViewCell: UICollectionViewCell {
         cardImage.layer.cornerRadius = 15
         layer.cornerRadius = 15
         
-        cardType.textColor = .color
-        cardType.font = UIFont(name: "Marker Felt", size: 12)
-        
-        creditLabel.text = "CARD NUMBER"
-        creditLabel.font = .systemFont(ofSize: 8, weight: .bold)
-        creditLabel.textColor = .color
-        
-        cardNumber.textColor = .color
-        cardNumber.font = .systemFont(ofSize: 16)
-        
-        ownerLabel.text = "CARD HOLDER NAME"
-        ownerLabel.textColor = .color
-        ownerLabel.font = .systemFont(ofSize: 8, weight: .bold)
-        
-        ownerName.textColor = .color
-        ownerName.font = .boldSystemFont(ofSize: 10)
-        
-        validLabel.text = "VALID THRU"
-        validLabel.textColor = .color1
-        validLabel.font = .boldSystemFont(ofSize: 8)
-        
-        validDate.font = .boldSystemFont(ofSize: 10)
-        validDate.textColor = .color
-    }
-
-}
-
-extension UICollectionViewCell {
-    func transformToLarge() {
-        UIView.animate(withDuration: 0.2) {
-            self.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        }
+        configureLabels()
     }
     
-    func transformToStandard() {
-        UIView.animate(withDuration: 0.2) {
-            self.transform = CGAffineTransform.identity
-        }
+    private func configureLabels() {
+        configureLabel(cardType, text: "CARD TYPE", font: UIFont(name: "Marker Felt", size: 12), textColor: .color)
+        configureLabel(creditLabel, text: "CARD NUMBER", font: .systemFont(ofSize: 8, weight: .bold), textColor: .color)
+        configureLabel(cardNumber, text: nil, font: .systemFont(ofSize: 16), textColor: .color)
+        configureLabel(ownerLabel, text: "CARD HOLDER NAME", font: .systemFont(ofSize: 8, weight: .bold), textColor: .color)
+        configureLabel(ownerName, text: nil, font: .boldSystemFont(ofSize: 10), textColor: .color)
+        configureLabel(validLabel, text: "VALID THRU", font: .boldSystemFont(ofSize: 8), textColor: .color1)
+        configureLabel(validDate, text: nil, font: .boldSystemFont(ofSize: 10), textColor: .color)
+    }
+    
+    private func configureLabel(_ label: UILabel, text: String?, font: UIFont?, textColor: UIColor) {
+        label.text = text
+        label.font = font
+        label.textColor = textColor
     }
 }
